@@ -36,3 +36,27 @@ maxCount：最大返回值，返回结果里面 list 最大数量。 最大值10
   ]
 }
 ~~~
+
+
+# TvBox配置
+~~~ json
+{
+  "sites": [
+    {
+      "key": "MV_vod",
+      "name": "👀┃MV┃视频",
+      "type": 1,
+      "api": "http://你自己域名:7777/mv/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ]
+~~~
+
+
+## 感谢
+### 直播MV来源：
+小武哥 ：https://t.me/BoBaiBroo
+
+直播文件：https://t.me/fongmi_offical/54024/244800
