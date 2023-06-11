@@ -2,6 +2,37 @@
 mv视频搜索服务
 
 # 请求接口
+
+## Vod搜索接口
+http://localhost:7777/mv/vod?maxCount=100&wd=五月天后来的我们
+
+请求参数定义
+~~~
+wd ：搜索值，mv名称或者歌手名 都可以
+ids ：vodId,同wd
+maxCount：最大返回值，返回结果里面 list 最大数量。 最大值1000
+~~~
+返回参数结果
+~~~
+{
+	"code": 1,
+	"page": 1,
+	"pagecount": 1,
+	"limit": 1,
+	"total": 1,
+	"list": [{
+		"vod_id": "五月天",
+		"vod_name": "五月天",
+		"vod_actor": "五月天",
+		"vod_play_from": "mv",
+		"vod_pic": "http://m4.auto.itc.cn/auto/content/20230611/45d65d8a001f0c5aa008030f41c98666.jpeg",
+		"vod_play_url": "五月天-出头天$http://em.21dtv.com/songs/60012964.mkv#五月天-纯真$http://em.21dtv.com/songs/60013405.mkv#五月天-兄弟$http://em.21dtv.com/songs/60137298.mkv#五月天-雌雄同体$http://em.21dtv.com/songs/60013442.mkv#五月天-洗衣机$http://em.21dtv.com/songs/60070028.mkv#五月天-为什么$http://em.21dtv.com/songs/60044059.mkv#五月天-孙悟空$http://em.21dtv.com/songs/60041009.mkv#五月天-米老鼠$http://em.21dtv.com/songs/60087264.mkv#五月天-垃圾车$http://em.21dtv.com/songs/60025892.mkv#五月天-开天窗$http://em.21dtv.com/songs/60025022.mkv#五月天-知足$http://em.21dtv.com/songs/60058693.mkv"
+	}]
+}
+~~~
+
+
+## 搜素接口
 http://localhost:7777/mv/search?maxCount=100&query=五月天后来的我们
 
 请求参数定义
